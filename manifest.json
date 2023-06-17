@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Comment Labeler",
+    "version": "1.0",
+    "description": "Adds a custom label beside YouTube comments.",
+    "permissions": ["https://www.youtube.com/*", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["p5.min.js", "ml5.min.js", "contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": ["p5.min.js", "ml5.min.js"],
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+  
